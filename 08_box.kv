@@ -1,0 +1,23 @@
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical" # "horizontal"
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 20 # spacing between the buttons
+
+        Button:
+            text: "Hello Rittwick!"
+
+        Button:
+            text: "Hello Bhabak!"
+
+        Button:
+            text: "Hello Rittwick Bhabak!"
+
+            # Either size_hint or use height and width 
+            # size_hint: (0.5, 0.5)
+            size_hint: (None, None)
+            pos_hint: {'center_x': 0.5} # centers the button horizontally
+            width: 200
+            height: 50 
